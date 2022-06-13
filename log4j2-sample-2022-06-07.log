@@ -1,0 +1,43 @@
+[INFO ] 2022-06-07 11:07:04.414 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:07:09.129 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:07:25.682 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:07:25.706 [main] Log - dttsts.deloitteresources.com
+[INFO ] 2022-06-07 11:07:25.993 [main] Log - Screenshot saved
+[INFO ] 2022-06-07 11:07:26.001 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:07:26.001 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-07 11:10:12.011 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-07 11:12:08.231 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:12:12.329 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:12:28.376 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:12:28.414 [main] Log - Allocation Engine
+[INFO ] 2022-06-07 11:12:28.612 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:12:28.614 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-07 11:12:31.077 [main] Log - Verifying Closed Pods tab
+[INFO ] 2022-06-07 11:12:31.125 [main] Log - Verifying Upcoming Pods tab
+[INFO ] 2022-06-07 11:13:35.372 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:13:39.960 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:13:56.479 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:13:56.513 [main] Log - Allocation Engine
+[INFO ] 2022-06-07 11:13:56.914 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:13:56.921 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-07 11:13:58.000 [main] Log - Verifying Closed Pods tab
+[INFO ] 2022-06-07 11:13:58.433 [main] Log - Screenshot saved
+[INFO ] 2022-06-07 11:29:54.522 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:29:58.943 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:30:16.055 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:30:16.088 [main] Log - Allocation Engine
+[INFO ] 2022-06-07 11:30:16.586 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:30:16.589 [main] Log - Checking Most recently updated pod is displayed
+[INFO ] 2022-06-07 11:33:08.141 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:33:12.454 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:33:28.523 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:33:28.570 [main] Log - Allocation Engine
+[INFO ] 2022-06-07 11:33:28.861 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:33:28.866 [main] Log - Checking Most recently updated pod is displayed
+[INFO ] 2022-06-07 11:33:30.695 [main] Log - No Data
+[INFO ] 2022-06-07 11:57:25.299 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:57:29.489 [main] Log - Started successfully
+[INFO ] 2022-06-07 11:57:44.532 [main] Log - Verifying page title
+[INFO ] 2022-06-07 11:57:44.545 [main] Log - Allocation Engine
+[INFO ] 2022-06-07 11:57:44.765 [main] Log - Successfully started
+[INFO ] 2022-06-07 11:57:44.767 [main] Log - Checking Most recently updated pod is displayed

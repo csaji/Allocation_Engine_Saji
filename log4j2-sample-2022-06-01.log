@@ -1,0 +1,17 @@
+[INFO ] 2022-06-01 10:52:56.581 [main] Log - Started successfully
+[INFO ] 2022-06-01 10:58:36.780 [main] Log - Started successfully
+[INFO ] 2022-06-01 15:07:22.424 [main] Log - Started successfully
+[INFO ] 2022-06-01 15:07:27.540 [main] Log - Verifying page title
+[INFO ] 2022-06-01 15:07:27.545 [main] Log - Sign in to your account
+[INFO ] 2022-06-01 15:07:27.551 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-01 15:08:26.170 [main] Log - Started successfully
+[INFO ] 2022-06-01 15:08:31.705 [main] Log - Verifying page title
+[INFO ] 2022-06-01 15:08:31.710 [main] Log - Sign in to your account
+[INFO ] 2022-06-01 15:08:31.716 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-01 15:08:45.130 [main] Log - Verifying Closed Pods tab
+[INFO ] 2022-06-01 15:12:18.944 [main] Log - Started successfully
+[INFO ] 2022-06-01 15:12:34.352 [main] Log - Verifying page title
+[INFO ] 2022-06-01 15:12:34.796 [main] Log - Allocation Engine
+[INFO ] 2022-06-01 15:12:34.799 [main] Log - Verifying Open Pods tab
+[INFO ] 2022-06-01 15:12:37.765 [main] Log - Verifying Closed Pods tab
+[INFO ] 2022-06-01 15:12:37.801 [main] Log - Verifying Upcoming Pods tab
