@@ -5,10 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.allocationPage;
-import pages.loginPage;
-import pages.myPodsPage;
-import pages.nominationPage;
+import pages.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -30,34 +27,51 @@ public class initialize {
     @Test(priority = 0)
     public void TC01_loginMethod() throws InterruptedException {
         loginPage.loginSteps();
-//        loginPage.verifyTitle();
     }
 
     @Test(priority = 1)
     public void TC02_allocationPageMethod() throws InterruptedException {
+        //        loginPage.verifyTitle();
 
-//        allocationPage.visibleTabs();
-//        allocationPage.verifyTogglingTwoTabs();
     }
 
     @Test(priority = 2)
     public void TC03_visibleTabMethod(){
+        //        allocationPage.visibleTabs();
+
+
+    }
+    @Test(priority = 3)
+    public void TC04_togglingTabMethod()
+    {
+        //        allocationPage.verifyTogglingTwoTabs();
+
+    }    @Test(priority = 4)
+    public void TC05_verifyMostRecentPodMethod()
+    {
         //        allocationPage.verifyMostRecentPod();
 
     }
 
-    @Test(priority = 2)
-    public void nominationPageMethods() throws InterruptedException {
+
+    @Test(priority = 5)
+    public void TC16_nominationPageMethods() throws InterruptedException {
         nominationPage.nominatingFirst();
         nominationPage.nominatingSecond();
     }
 
-    @Test(priority = 3)
-    public void myPodsPageMethods() throws InterruptedException {
+    @Test(priority = 6)
+    public void TC17_myPodsPageMethods() throws InterruptedException {
 //        loginPage.loginSteps();
         myPodsPage.podsConfidence();
         myPodsPage.selectHasher();
 //        myPodsPage.selectFinalHasher();
+    }
+
+    @Test(priority = 6)
+    public void TC18_confirmStatusMethods() throws InterruptedException {
+//        checkingStatus.podsStatus();
+
     }
 //    @AfterTest
 //    public static void terminate()
