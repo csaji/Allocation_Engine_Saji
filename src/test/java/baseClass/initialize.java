@@ -28,17 +28,22 @@ public class initialize {
     }
 
     @Test(priority = 0)
-    public void loginMethod() throws InterruptedException {
+    public void TC01_loginMethod() throws InterruptedException {
         loginPage.loginSteps();
 //        loginPage.verifyTitle();
     }
 
     @Test(priority = 1)
-    public void allocationPageMethod() throws InterruptedException {
+    public void TC02_allocationPageMethod() throws InterruptedException {
 
 //        allocationPage.visibleTabs();
-//        allocationPage.verifyMostRecentPod();
 //        allocationPage.verifyTogglingTwoTabs();
+    }
+
+    @Test(priority = 2)
+    public void TC03_visibleTabMethod(){
+        //        allocationPage.verifyMostRecentPod();
+
     }
 
     @Test(priority = 2)
@@ -50,8 +55,8 @@ public class initialize {
     @Test(priority = 3)
     public void myPodsPageMethods() throws InterruptedException {
 //        loginPage.loginSteps();
-//        myPodsPage.podsConfidence();
-//        myPodsPage.selectHasher();
+        myPodsPage.podsConfidence();
+        myPodsPage.selectHasher();
 //        myPodsPage.selectFinalHasher();
     }
 //    @AfterTest

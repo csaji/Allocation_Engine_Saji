@@ -16,7 +16,8 @@ public class nominationPage extends initialize {
 //    static By filterbuttonxpath = By.xpath("//img[@src= '/allocation/static/media/account.be6286e0.svg']");
     static By filterbuttonxpath = By.xpath("//span[@class= 'ant-badge']");
     static By resetbuttonxpath = By.xpath("//button[@class = 'ant-btn ant-btn-default resetBtn']");
-    static By applybuttonxpath = By.xpath("//button[@class = 'ant-btn ant-btn-primary primary-btn']");
+    static By applybuttonxpath = By.xpath("//span[contains(text(),'Apply')]");
+    static By filterbackarrowxpath = By.xpath("//span[@class= 'anticon anticon-arrow-left' and @tabindex = '-1']");
     static By addhasherbuttonxpath = By.xpath("//span[@class = 'anticon anticon-user-add']");
     static By searchHasherxpath = By.xpath("//input[@type='text']");
     static By searchButtonXpath = By.xpath("//button[@class = 'ant-btn ant-btn-default ant-btn-icon-only ant-input-search-button']");
@@ -32,20 +33,25 @@ public class nominationPage extends initialize {
         driver.findElement(nominatebuttonxpath).click();
         Log.info("Clicking on Nominate button");
         wait.setImplicitWait(60);
-        Thread.sleep(8000);
 //        js.executeScript("window.scrollBy(250,0)", "");
+        Thread.sleep(2000);
 //        js.executeScript("window.scrollBy(350,0)", "");
 //        driver.navigate().refresh();
         driver.findElement(filterbuttonxpath).click();
-        Thread.sleep(3000);
-//        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        Thread.sleep(2000);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.findElement(resetbuttonxpath);
         Thread.sleep(1000);
-        driver.navigate().refresh();
-//        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//        driver.navigate().refresh();
+//        driver.findElement(filterbackarrowxpath);
 //        driver.findElement(applybuttonxpath);
-//        wait.setImplicitWait(60);
-        Thread.sleep(5000);
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+                driver.findElement(applybuttonxpath));
+        Thread.sleep(1000);
+
+
+        wait.setImplicitWait(60);
         driver.findElement(searchHasherxpath).sendKeys("Saji C");
 //        driver.findElement(searchHasherxpath).sendKeys("Blake Mills");
         Thread.sleep(2000);
@@ -56,9 +62,9 @@ public class nominationPage extends initialize {
         js.executeScript("window.scrollBy(0,250)", "");
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.findElement(confirmNominationButtonxpath).click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         driver.navigate().back();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     public static void nominatingSecond() throws InterruptedException {
@@ -72,29 +78,39 @@ public class nominationPage extends initialize {
         wait.setImplicitWait(60);
 
         driver.findElement(filterbuttonxpath).click();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         driver.findElement(resetbuttonxpath);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 //        driver.findElement(applybuttonxpath);
-        driver.navigate().refresh();
+//        driver.findElement(filterbackarrowxpath);
+//        driver.navigate().refresh();
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+                driver.findElement(applybuttonxpath));
+        Thread.sleep(1000);
         wait.setImplicitWait(60);
 
         WebElement button = driver.findElement(addhasherbuttonxpath);
         Log.info("Adding a Hasher");
         driver.findElement(searchHasherxpath).sendKeys("Saji C");
-        Thread.sleep(5000);
-        driver.findElement(searchButtonXpath).click();
-        Thread.sleep(5000);
-        driver.findElement(addhasherbuttonxpath).click();
-        button.click();
-        Thread.sleep(3000);
-        driver.findElement(searchHasherxpath).sendKeys("Aishwarya G");
-        driver.findElement(searchButtonXpath).click();
-        Thread.sleep(3000);
-        button.click();
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.findElement(confirmNominationButtonxpath).click();
         Thread.sleep(2000);
+        driver.findElement(searchButtonXpath).click();
+        Thread.sleep(2000);
+        driver.findElement(addhasherbuttonxpath).click();
+//        button.click();
+
+//        driver.navigate().refresh();
+        Thread.sleep(2000);
+        wait.setImplicitWait(60);
+        driver.findElement(searchHasherxpath).sendKeys("Aishwarya G");
+        Thread.sleep(2000);
+        driver.findElement(searchButtonXpath).click();
+        Thread.sleep(3000);
+        driver.findElement(addhasherbuttonxpath).click();
+//        button.click();
+
+        driver.findElement(confirmNominationButtonxpath).click();
+        Thread.sleep(4000);
         driver.navigate().back();
         driver.findElement(mypodstabxpath).click();
         refreshPage.page_refresh();

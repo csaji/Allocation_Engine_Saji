@@ -22,6 +22,7 @@ public class myPodsPage extends initialize {
     static By viewresponsebuttonxpath = By.xpath("//button[contains(.,'View Responses')]");
     static By secondviewresponsexpath = By.xpath("//tr[@class = 'ant-table-row ant-table-row-level-0 pointer'][2]");
     static By selectbuttonxpath = By.xpath("//button[contains(., 'Select')]");
+    static By secondselectxpath = By.xpath("(//button[contains(text(), 'Select')]) [2]");
     static By closewindowxpath = By.xpath("//span[@class = 'anticon anticon-close ant-modal-close-icon']");
     static By hashernamexpath = By.xpath("//h2[@class = 'name']");
     static By selectonenominationxpath = By.xpath("//tr[@class = 'ant-table-row ant-table-row-level-0 pointer'][1]");
@@ -48,19 +49,27 @@ public class myPodsPage extends initialize {
         Log.info("Opening ddl");
         driver.findElement(ddlxpath).click();
         driver.findElement(confidancelevelxpath).click();
+        Thread.sleep(2000);
         driver.findElement(submittickxpath).click();
         driver.findElement(closenominationstabxpath).click();
         Thread.sleep(2000);
         driver.findElement(pendingnominationxpath).click();
+        Thread.sleep(2000);
         driver.findElement(ddlxpath).click();
         driver.findElement(confidancelevelxpath).click();
+        Thread.sleep(3000);
         driver.findElement(submittickxpath).click();
+        Thread.sleep(3000);
+        driver.findElement(ddlxpath).click();
+        Thread.sleep(2000);
+        driver.findElement(confidancelevelxpath).click();
+        driver.findElement(submittickxpath).click();
+        Thread.sleep(2000);
         driver.findElement(closenominationstabxpath).click();
 
     }
 
-    public static void selectHasher()
-    {
+    public static void selectHasher() throws InterruptedException {
         driver.findElement(allocationtabxpath).click();
         driver.findElement(firstrequestxpath).click();
         wait.setImplicitWait(60);
@@ -70,10 +79,13 @@ public class myPodsPage extends initialize {
         driver.findElement(selectbuttonxpath).click();
         wait.setImplicitWait(60);
         driver.findElement(closewindowxpath).click();
-
+        Thread.sleep(2000);
         driver.findElement(secondviewresponsexpath).click();
         driver.findElement(selectbuttonxpath).click();
         wait.setImplicitWait(60);
+        Thread.sleep(2000);
+        driver.findElement(secondselectxpath).click();
+        Thread.sleep(2000);
         driver.findElement(closewindowxpath).click();
 
         String hasherName = driver.findElement(hashernamexpath).getText();
